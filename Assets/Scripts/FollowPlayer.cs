@@ -16,7 +16,7 @@ public class FollowPlayer : MonoBehaviour
     // 5: Right Back  ( 135)
     public int soundSourceIndex = 0;
 
-    public float absWallDistance = 0.0f;
+    public float absWallDistance = 8.0f;
 
     //v3 offset multiplier
 
@@ -25,18 +25,18 @@ public class FollowPlayer : MonoBehaviour
     // 1: predetermined sources (e.g. L, R, U, D)
     // 2: raycasts out in directions and flipping distance to wall
     // 3: ???
-    
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         if (player == null)
         {
             player = GameObject.FindWithTag("Player");
         }
+    }
 
-        
-
+    // Start is called before the first frame update
+    void Start()
+    {
         setSourceOffset();
     }
 

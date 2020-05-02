@@ -13,13 +13,13 @@ public class AudioSourceUtility : MonoBehaviour
 
     void Start()
     {
-        
-
+        audiosource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        maxDistance = audiosource.maxDistance;
+        maxDistance = audiosource.maxDistance + 0.5f;
+        Debug.Log("MadDis: " + maxDistance);
 
         float distance = Vector3.Distance(player.transform.position, transform.position);
 
