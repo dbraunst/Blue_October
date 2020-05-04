@@ -125,8 +125,8 @@ MonoBehaviour:
   enableSpatialization: 1
   gain: 0
   useInvSqr: 0
-  near: 1
-  far: 4
+  near: 2
+  far: 7
   volumetricRadius: 0
   reverbSend: 0
   enableRfl: 0
@@ -152,7 +152,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 8
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -164,36 +164,36 @@ AudioSource:
     - serializedVersion: 3
       time: 0.125
       value: 1
-      inSlope: -8.0032
-      outSlope: -8.0032
-      tangentMode: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.25
-      value: 0.5
-      inSlope: -2.0008
-      outSlope: -2.0008
-      tangentMode: 0
+      time: 0.465271
+      value: 0.88027954
+      inSlope: -0.53530484
+      outSlope: -0.53530484
+      tangentMode: 136
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.5
-      value: 0.25
-      inSlope: -0.5002
-      outSlope: -0.5002
-      tangentMode: 0
+      time: 0.6440735
+      value: 0.72213745
+      inSlope: -1.8123336
+      outSlope: -1.8123336
+      tangentMode: 136
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.6976952
-      value: 0.17285424
-      inSlope: -0.63824034
-      outSlope: -0.63824034
-      tangentMode: 0
+      time: 0.7359032
+      value: 0.3898037
+      inSlope: -2.028895
+      outSlope: -2.028895
+      tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
