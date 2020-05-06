@@ -20,7 +20,9 @@ public class FollowPlayer : MonoBehaviour
 
     //v3 offset multiplier
 
-    private Vector3 offset = Vector3.zero;
+    public Vector3 offset = Vector3.zero;
+
+    public Vector3 direction;
     // THOUGHTS: smarter to do offset / object managemenet via 
     // 1: predetermined sources (e.g. L, R, U, D)
     // 2: raycasts out in directions and flipping distance to wall
@@ -56,27 +58,33 @@ public class FollowPlayer : MonoBehaviour
         {
 
             case 0: // left
-                offset = (Vector3.left * absWallDistance) + player.GetComponent<Player>().hitLocations[0];
+                direction = player.GetComponent<Player>().hitLocations[0] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[0] + direction;
                 transform.position = offset;
                 break;
             case 1: // right
-                offset = (Vector3.right * absWallDistance) + player.GetComponent<Player>().hitLocations[1];
+                direction = player.GetComponent<Player>().hitLocations[1] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[1] + direction;
                 transform.position = offset;
                 break;
             case 2: // front left
-                offset = ((Vector3.left + Vector3.forward) * absWallDistance) + player.GetComponent<Player>().hitLocations[2];
+                direction = player.GetComponent<Player>().hitLocations[2] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[2] + direction;
                 transform.position = offset;
                 break;
             case 3: // front right
-                offset = ((Vector3.right + Vector3.forward) * absWallDistance) + player.GetComponent<Player>().hitLocations[3];
+                direction = player.GetComponent<Player>().hitLocations[3] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[3] + direction;
                 transform.position = offset;
                 break;
             case 4: // back left
-                offset = ((Vector3.left + Vector3.back) * absWallDistance) + player.GetComponent<Player>().hitLocations[4];
+                direction = player.GetComponent<Player>().hitLocations[4] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[4] + direction;
                 transform.position = offset;
                 break;
             case 5: // back right
-                offset = ((Vector3.right + Vector3.back) * absWallDistance) + player.GetComponent<Player>().hitLocations[5];
+                direction = player.GetComponent<Player>().hitLocations[5] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[5] + direction;
                 transform.position = offset;
                 break;
 

@@ -223,7 +223,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13987814}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 03af901c864ba7b4289e959e297f7b73, type: 3}
@@ -327,7 +327,7 @@ MonoBehaviour:
   sonarPing: {fileID: 13987819}
   sonarReturn: {fileID: 13987821}
   player: {fileID: 163948194}
-  timeScale: 2
+  timeScale: 10
   timeDelay: 0
   arbNumber: 0.001
 --- !u!82 &13987821
