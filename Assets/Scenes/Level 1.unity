@@ -693,6 +693,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403348, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403348, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.0932897
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403348, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: m_Direction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403348, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.028356362
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403348, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403340, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403340, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: accelSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403340, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: swapVerticalAxes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1472574727599403340, guid: b7fa785b0e046a1458c7cd6e900a6099,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -700,6 +745,26 @@ PrefabInstance:
     - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
       propertyPath: m_CollisionDetection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+      propertyPath: m_Mass
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 36720074, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+      propertyPath: m_Constraints
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 963194225, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
       propertyPath: m_IsActive
@@ -944,6 +1009,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 82617985}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &163948195
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163948194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &173854324
 PrefabInstance:
   m_ObjectHideFlags: 0
