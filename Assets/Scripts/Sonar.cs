@@ -13,18 +13,22 @@ public class Sonar : MonoBehaviour
 
     public GameObject player;
 
-    float timeDelay;
+    float speedOfSound = 1450.0f;
+    [Tooltip("Scale Multiplicaiton of distance, in Meters")]
+    public float timeScale = 10.0f;
+
+    [Tooltip("In Deconds")]
+    public float timeDelay;
     public float arbNumber;
 
     void Start()
     {
         
-        
     }
 
     void Update()
     {
-        timeDelay = Vector3.Distance(player.transform.position, this.transform.position)/50;
+        timeDelay = Vector3.Distance(player.transform.position, transform.position) * timeScale / speedOfSound;
 
         if (Input.GetButtonDown("Fire1") && sonarPing.isPlaying == false)
         {
@@ -35,8 +39,10 @@ public class Sonar : MonoBehaviour
     }
 
     IEnumerator SonarReturn()
-    {        
+    {
+        Debug.Log("timeDelay" + Time.time);
         yield return new WaitForSeconds(timeDelay);
+        Debug.Log("Play" + Time.time);
         sonarReturn.Play();
     }
 

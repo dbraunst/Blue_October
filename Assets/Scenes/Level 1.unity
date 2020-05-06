@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 13987820}
   - component: {fileID: 13987819}
   - component: {fileID: 13987821}
+  - component: {fileID: 13987822}
   m_Layer: 0
   m_Name: Objective
   m_TagString: Untagged
@@ -222,7 +223,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13987814}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 03af901c864ba7b4289e959e297f7b73, type: 3}
@@ -326,6 +327,8 @@ MonoBehaviour:
   sonarPing: {fileID: 13987819}
   sonarReturn: {fileID: 13987821}
   player: {fileID: 163948194}
+  timeScale: 2
+  timeDelay: 0
   arbNumber: 0.001
 --- !u!82 &13987821
 AudioSource:
@@ -450,6 +453,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &13987822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13987814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e503ea6418d27594caa33b93cac1b06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableSpatialization: 1
+  gain: 0
+  useInvSqr: 0
+  near: 0.25
+  far: 250
+  volumetricRadius: 0
+  reverbSend: 0
+  enableRfl: 0
 --- !u!1001 &17134199
 PrefabInstance:
   m_ObjectHideFlags: 0
