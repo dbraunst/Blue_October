@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    static public int numSources = 6;
+    static public int numSources = 9;
 
     LayerMask mask = -2; //raycast ignores layer 2
 
@@ -105,6 +105,48 @@ public class Player : MonoBehaviour
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(1, 0, -1) * 200, Color.white);
+            //Debug.Log("Did not Hit");
+        }
+
+        // Front
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, maxRayDist))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.magenta);
+            distanceToWall[6] = hit.distance;
+            hitLocations[6] = hit.point;
+            //Debug.Log("Did Hit");
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 200, Color.white);
+            //Debug.Log("Did not Hit");
+        }
+
+        // FrontFrontLeft
+        if (Physics.Raycast(transform.position, transform.TransformDirection(-1, 0, 2), out hit, maxRayDist))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(-1, 0, 2) * hit.distance, Color.magenta);
+            distanceToWall[7] = hit.distance;
+            hitLocations[7] = hit.point;
+            //Debug.Log("Did Hit");
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(-1, 0, 2) * 200, Color.white);
+            //Debug.Log("Did not Hit");
+        }
+
+        // FrontFrontRight
+        if (Physics.Raycast(transform.position, transform.TransformDirection(1, 0, 2), out hit, maxRayDist))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(1, 0, 2) * hit.distance, Color.magenta);
+            distanceToWall[8] = hit.distance;
+            hitLocations[8] = hit.point;
+            //Debug.Log("Did Hit");
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(1, 0, 2) * 200, Color.white);
             //Debug.Log("Did not Hit");
         }
     }

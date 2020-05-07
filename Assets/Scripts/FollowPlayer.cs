@@ -14,6 +14,10 @@ public class FollowPlayer : MonoBehaviour
     // 3: Right Front ( 45)
     // 4: Left Back   (-135)
     // 5: Right Back  ( 135)
+    // 6: Front (0)
+    // 7: FrontFrontLeft
+    // 8: FrontFrontRight
+
     public int soundSourceIndex = 0;
 
     public float absWallDistance = 8.0f;
@@ -85,6 +89,21 @@ public class FollowPlayer : MonoBehaviour
             case 5: // back right
                 direction = player.GetComponent<Player>().hitLocations[5] - player.transform.position;
                 offset = player.GetComponent<Player>().hitLocations[5] + direction;
+                transform.position = offset;
+                break;
+            case 6: // front
+                direction = player.GetComponent<Player>().hitLocations[6] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[6] + direction;
+                transform.position = offset;
+                break;
+            case 7: // frontfrontleft
+                direction = player.GetComponent<Player>().hitLocations[7] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[7] + direction;
+                transform.position = offset;
+                break;
+            case 8: // frontfrontright
+                direction = player.GetComponent<Player>().hitLocations[8] - player.transform.position;
+                offset = player.GetComponent<Player>().hitLocations[8] + direction;
                 transform.position = offset;
                 break;
 

@@ -17,7 +17,7 @@ public class Sonar : MonoBehaviour
     [Tooltip("Scale Multiplicaiton of distance, in Meters")]
     public float timeScale = 10.0f;
 
-    [Tooltip("In Deconds")]
+    [Tooltip("In Seconds")]
     public float timeDelay;
     public float arbNumber;
 

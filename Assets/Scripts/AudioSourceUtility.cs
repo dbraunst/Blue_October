@@ -9,6 +9,10 @@ public class AudioSourceUtility : MonoBehaviour
 
     public GameObject player;
 
+    public float maxVol = 1.0f;
+    public float fadeInTime = 1.0f;
+    public float fadeOutTime = 1.0f;
+
     float maxDistance;
 
     void Start()
@@ -25,20 +29,45 @@ public class AudioSourceUtility : MonoBehaviour
 
         if (distance <= maxDistance && audiosource.isPlaying == false)
         {
-            PlaySound();
+            StartCoroutine ("PlaySound");
         }
 
         if (distance > maxDistance)
         {
-            audiosource.Stop();
+            StartCoroutine("StopSound");
         }
 
     }
 
-    void PlaySound()
+    IEnumerator PlaySound()
     {
+        audiosource.volume = 0f;
         clip = audiosource.clip;
         audiosource.time = Random.Range(0f, clip.length);
+        
         audiosource.Play();
+
+        while (audiosource.volume < maxVol)
+        {
+            audiosource.volume += Time.deltaTime / fadeInTime;
+
+            yield return null;
+        }
+
+        audiosource.volume = maxVol;
     }
+
+    IEnumerator StopSound()
+    {
+        while (audiosource.volume > 0.01f)
+        {
+            audiosource.volume -= Time.deltaTime / fadeOutTime;
+
+            yield return null;
+        }
+
+        audiosource.volume = 0;
+        audiosource.Stop();
+    }
+
 }

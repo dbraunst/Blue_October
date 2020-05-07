@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 570959845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0.434}
   m_LocalScale: {x: 1, y: 1, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1472574727599403347}
@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 1472574727599403343}
   - component: {fileID: 1472574727599403340}
   - component: {fileID: 36720074}
+  - component: {fileID: 163948195}
   m_Layer: 0
   m_Name: Submarine
   m_TagString: Player
@@ -180,11 +181,11 @@ CapsuleCollider:
   m_GameObject: {fileID: 1472574727599403351}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.7
-  m_Height: 1.1
+  m_Enabled: 0
+  m_Radius: 0.58
+  m_Height: 1.0932897
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: 0.028356362}
 --- !u!114 &1472574727599403344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +205,13 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+  - 0
+  - 0
+  - 0
   hitLocations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -329,6 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1472574727599403351}
+  maxVol: 1
+  fadeInTime: 1
+  fadeOutTime: 1
 --- !u!114 &1472574727599403340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,9 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b60dda668c6420aad3cf52adfe4340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  accelSpeed: 0
-  turnSpeed: 50
+  moveSpeed: 20
+  turnSpeed: 5
   swapVerticalAxes: 0
 --- !u!54 &36720074
 Rigidbody:
@@ -353,14 +362,28 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472574727599403351}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
+  m_Mass: 15
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 1
+  m_Constraints: 84
+  m_CollisionDetection: 3
+--- !u!64 &163948195
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472574727599403351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1472574728230033470
 GameObject:
   m_ObjectHideFlags: 0

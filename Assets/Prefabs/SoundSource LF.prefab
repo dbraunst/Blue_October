@@ -93,7 +93,7 @@ SphereCollider:
   m_GameObject: {fileID: 4688132395672664330}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -111,6 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundSourceIndex: 2
   absWallDistance: 0
+  offset: {x: 0, y: 0, z: 0}
+  direction: {x: 0, y: 0, z: 0}
 --- !u!114 &4688132395672664325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,8 +128,8 @@ MonoBehaviour:
   enableSpatialization: 1
   gain: 0
   useInvSqr: 0
-  near: 2
-  far: 7
+  near: 6
+  far: 12
   volumetricRadius: 0
   reverbSend: 0
   enableRfl: 0
@@ -151,9 +153,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 1.9
   MinDistance: 1
-  MaxDistance: 7
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -163,8 +165,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.125
-      value: 1
+      time: 0.11306381
+      value: 0.99648666
       inSlope: 0
       outSlope: 0
       tangentMode: 136
@@ -172,28 +174,37 @@ AudioSource:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.465271
-      value: 0.88027954
-      inSlope: -0.53530484
-      outSlope: -0.53530484
+      time: 0.21101722
+      value: 0.8810725
+      inSlope: -0.96876466
+      outSlope: -0.96876466
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.6440735
-      value: 0.72213745
-      inSlope: -1.8123336
-      outSlope: -1.8123336
+      time: 0.38174438
+      value: 0.7361984
+      inSlope: -0.31750166
+      outSlope: -0.31750166
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.7359032
-      value: 0.3898037
-      inSlope: -2.028895
-      outSlope: -2.028895
+      time: 0.5653076
+      value: 0.7080765
+      inSlope: -0.4132616
+      outSlope: -0.4132616
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.75262684
+      value: 0.5514706
+      inSlope: -1.4410733
+      outSlope: -1.4410733
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
@@ -268,6 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  maxVol: 1
+  fadeInTime: 0.5
+  fadeOutTime: 2
 --- !u!169 &755558249
 AudioLowPassFilter:
   m_ObjectHideFlags: 0

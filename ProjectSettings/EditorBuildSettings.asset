@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WallDistance Test.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Level 1.unity
+    guid: 834c19e5fff09694dbae3ad1acaabfa2
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: cbaa2bd73895c274bb39d1654e9f4efb
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 5ea7f72ed7028cb4a9313229aa322eeb
   m_configObjects: {}
