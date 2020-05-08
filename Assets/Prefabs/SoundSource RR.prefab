@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   maxVol: 1
-  fadeInTime: 0.5
+  fadeInTime: 0.3
   fadeOutTime: 2
 --- !u!82 &9070794725524981087
 AudioSource:
@@ -160,7 +160,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -78962915400555431, guid: 1dd706bb85d8aef4e83a6229dbd62c36,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: dd09b18d45fd94743809878139b591e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47019c673bc312f428b0c1ec2711b105, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
