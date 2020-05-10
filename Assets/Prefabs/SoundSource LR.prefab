@@ -110,9 +110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundSourceIndex: 4
+  lerpSpeed: 2
+  distance: 0
   absWallDistance: 0
   offset: {x: 0, y: 0, z: 0}
-  direction: {x: 0, y: 0, z: 0}
+  newOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &2250654437127908179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  maxVol: 1
+  maxVol: 0.5
   fadeInTime: 0.3
   fadeOutTime: 2
 --- !u!82 &8118302360830918259
@@ -257,7 +259,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

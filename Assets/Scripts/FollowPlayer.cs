@@ -169,19 +169,19 @@ public class FollowPlayer : MonoBehaviour
                 direction = player.GetComponent<Player>().hitLocations[6] - player.transform.position;
                 offset = player.GetComponent<Player>().hitLocations[6] + direction;
 
-                updatePositionWithinBounds(15.0f);
+                updatePositionWithinBounds(20.0f);
                 break;
             case 7: // frontfrontleft
                 direction = player.GetComponent<Player>().hitLocations[7] - player.transform.position;
                 offset = player.GetComponent<Player>().hitLocations[7] + direction;
 
-                updatePositionWithinBounds(15.0f);
+                updatePositionWithinBounds(20.0f);
                 break;
             case 8: // frontfrontright
                 direction = player.GetComponent<Player>().hitLocations[8] - player.transform.position;
                 offset = player.GetComponent<Player>().hitLocations[8] + direction;
 
-                updatePositionWithinBounds(15.0f);
+                updatePositionWithinBounds(20.0f);
                 break;
             default:
                 break;

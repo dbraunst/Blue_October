@@ -110,9 +110,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundSourceIndex: 6
+  lerpSpeed: 5
+  distance: 0
   absWallDistance: 0
   offset: {x: 0, y: 0, z: 0}
-  direction: {x: 0, y: 0, z: 0}
+  newOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &517168498376307451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,7 +157,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1.9
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -174,40 +176,31 @@ AudioSource:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.21101722
-      value: 0.8810725
-      inSlope: -0.96876466
-      outSlope: -0.96876466
+      time: 0.33034858
+      value: 0.968925
+      inSlope: -0.1370486
+      outSlope: -0.1370486
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.38174438
-      value: 0.7361984
-      inSlope: -0.31750166
-      outSlope: -0.31750166
+      time: 0.52493286
+      value: 0.9400406
+      inSlope: -0.28417167
+      outSlope: -0.28417167
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.5653076
-      value: 0.7080765
+      time: 0.69177246
+      value: 0.86621857
       inSlope: -0.4132616
       outSlope: -0.4132616
       tangentMode: 0
       weightedMode: 0
       inWeight: 1
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.75262684
-      value: 0.5514706
-      inSlope: -1.4410733
-      outSlope: -1.4410733
-      tangentMode: 136
-      weightedMode: 0
-      inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
@@ -241,7 +234,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
