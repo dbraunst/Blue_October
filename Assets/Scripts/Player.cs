@@ -16,14 +16,20 @@ public class Player : MonoBehaviour
     public Vector3[] hitLocations = new Vector3[numSources];
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-
+        getRaycasthits();
     }
 
     // Update is called once per frame
     void Update()
     {
+        getRaycasthits();
+    }
+
+    void getRaycasthits()
+    {
+
         // Left
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.left), out hit, maxRayDist))
         {
