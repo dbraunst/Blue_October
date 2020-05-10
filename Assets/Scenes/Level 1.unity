@@ -1751,6 +1751,16 @@ PrefabInstance:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854478, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854478, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 1.0033875
+      objectReference: {fileID: 0}
     - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope

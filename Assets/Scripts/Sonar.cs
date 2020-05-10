@@ -23,7 +23,7 @@ public class Sonar : MonoBehaviour
 
     void Start()
     {
-        
+        sonarPing.spatialize = false;
     }
 
     void Update()
@@ -32,6 +32,7 @@ public class Sonar : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && sonarPing.isPlaying == false)
         {
+
             sonarPing.Play();
             StartCoroutine(SonarReturn());
         }
