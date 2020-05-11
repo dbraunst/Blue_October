@@ -410,8 +410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1425.4, y: -587}
-  m_SizeDelta: {x: 2274.4, y: 625}
+  m_AnchoredPosition: {x: 1425.4, y: -512}
+  m_SizeDelta: {x: 2274.4, y: 667.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6448042208924404879
 CanvasRenderer:
@@ -455,15 +455,15 @@ MonoBehaviour:
   m_Text: "\nIn this project you take control of a submersible traversing underwater
     caverns.\n\nIt is your job to navigate to the object of interest in each level.
     You must do this by using your sonar to determine the object's location. By using
-    directional cues, you must listen to the direction of the sonar wave and follow
-    it until you reach the objective.\n\nHowever, the levels are not straight forward.
-    The underwater caverns are narrow and contain other obstacles that impede your
-    path. By listening to the reflections of the submersible's engine off the walls
-    and other objects in the game, you must avoid these. The volume, LPF, and directionality
-    will guide you in how close you are to the objects and in which direction you
-    need to turn to avoid them.\n\nThere are three levels in total. \n\nPlease fill
-    out the answers to the questionnaire once you have completed the experience. Thanks
-    for playing!\n"
+    directional cues, you must listen to the direction of the RETURN sonar wave and
+    follow it until you reach the objective.\n\nHowever, the levels are not straight
+    forward. The underwater caverns are narrow and contain other obstacles that impede
+    your path. By listening to the reflections of the submersible's engine off the
+    walls and other objects in the game, you must avoid these. The volume, LPF, and
+    directionality will guide you in how close you are to the objects and in which
+    direction you need to turn to avoid them.\n\nThere are three levels in total.
+    \n\nPlease fill out the answers to the questionnaire once you have completed the
+    experience. Thanks for playing!\n"
 --- !u!1 &6448042209291897528
 GameObject:
   m_ObjectHideFlags: 0
