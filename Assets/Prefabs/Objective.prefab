@@ -263,24 +263,24 @@ AudioSource:
     - serializedVersion: 3
       time: 0.48873496
       value: 0.84025574
-      inSlope: -0.9424142
-      outSlope: -0.9424142
+      inSlope: -0.76815563
+      outSlope: -0.76815563
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.7948529
-      value: 0.45368958
-      inSlope: -1.2950379
-      outSlope: -1.2950379
+      time: 0.79247254
+      value: 0.5520935
+      inSlope: -1.0201042
+      outSlope: -1.0201042
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0.17814815
+      value: 0.31871212
       inSlope: -0.012992183
       outSlope: -0.012992183
       tangentMode: 0
@@ -367,6 +367,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64ada41566ca224f897c04f37fb94fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1472574727599403351, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
+  checkPoints: []
+  numCheckPointsHit: 0
+  finalPos: {x: 0, y: 0, z: 0}
+  totalDistance: 0
 --- !u!135 &1098353813
 SphereCollider:
   m_ObjectHideFlags: 0

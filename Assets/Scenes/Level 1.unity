@@ -597,7 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1109f9cf26fe34141bafaa1917fc741a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: {fileID: 0}
+  objective: {fileID: 1098353812}
 --- !u!1001 &173854324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,15 +744,15 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 163948194}
-    - target: {fileID: 517168498376307397, guid: 79d5b4ec9d319c24c92a35abde353ef5,
-        type: 3}
-      propertyPath: lerpSpeed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 517168498376307392, guid: 79d5b4ec9d319c24c92a35abde353ef5,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517168498376307397, guid: 79d5b4ec9d319c24c92a35abde353ef5,
+        type: 3}
+      propertyPath: lerpSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 517168498376307396, guid: 79d5b4ec9d319c24c92a35abde353ef5,
         type: 3}
@@ -1524,7 +1524,7 @@ PrefabInstance:
     - target: {fileID: 6448042207970912985, guid: a4a471ae59f591545beb0141270e2d6d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6448042207970912990, guid: a4a471ae59f591545beb0141270e2d6d,
         type: 3}
@@ -2228,6 +2228,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
+--- !u!1 &1098353812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7940654775689854467, guid: 8f75f52422850884fb4abed8f59bf9a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1098353811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1108934336
 PrefabInstance:
   m_ObjectHideFlags: 0
