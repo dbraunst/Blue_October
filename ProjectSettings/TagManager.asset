@@ -7,6 +7,8 @@ TagManager:
   - Wall
   - Emitter
   - Sub
+  - Objective
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
