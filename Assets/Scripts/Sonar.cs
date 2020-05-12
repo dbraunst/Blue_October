@@ -34,7 +34,8 @@ public class Sonar : MonoBehaviour
         {
 
             sonarPing.Play();
-            StartCoroutine(SonarReturn());
+            sonarReturn.PlayDelayed(timeDelay);
+            //StartCoroutine(SonarReturn());
         }
 
 
@@ -43,12 +44,12 @@ public class Sonar : MonoBehaviour
     }
 
 
-    IEnumerator SonarReturn()
+    /*IEnumerator SonarReturn()
     {
         Debug.Log("timeDelay" + Time.time);
         yield return new WaitForSeconds(timeDelay);
         Debug.Log("Play" + Time.time);
         sonarReturn.Play();
-    }
+    }*/
 
 }
