@@ -18,9 +18,11 @@ GameObject:
   - component: {fileID: 7940654775689854475}
   - component: {fileID: 553690110383781894}
   - component: {fileID: 1098353813}
+  - component: {fileID: 3308455651528320351}
+  - component: {fileID: 1098353824}
   m_Layer: 2
   m_Name: Objective
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,7 +56,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7940654775689854467}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -112,8 +114,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonarPing: {fileID: 7940654775689854478}
   sonarReturn: {fileID: 7940654775689854472}
+  cutoffFreq: 800
   player: {fileID: 0}
-  timeScale: 10
+  timeScale: 15
   timeDelay: 0
   arbNumber: 0.001
 --- !u!82 &7940654775689854478
@@ -368,7 +371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1472574727599403351, guid: b7fa785b0e046a1458c7cd6e900a6099, type: 3}
-  checkPoints: []
+  checkPoints:
+  - {fileID: 0}
+  - {fileID: 0}
   numCheckPointsHit: 0
   finalPos: {x: 0, y: 0, z: 0}
   totalDistance: 0
@@ -385,3 +390,51 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!169 &3308455651528320351
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940654775689854467}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.0017631
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!164 &1098353824
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940654775689854467}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -4000
+  m_DecayTime: 1.49
+  m_DecayHFRatio: 0.1
+  m_ReflectionsLevel: -449
+  m_ReverbLevel: 1700
+  m_ReverbDelay: 0.011
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 23

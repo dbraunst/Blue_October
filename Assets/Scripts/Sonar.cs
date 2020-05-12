@@ -10,7 +10,7 @@ public class Sonar : MonoBehaviour
     public AudioSource sonarReturn;
     AudioClip sonarReturnClip;
 
-
+    public int cutoffFreq = 500;
     public GameObject player;
 
     float speedOfSound = 1450.0f;
@@ -24,7 +24,7 @@ public class Sonar : MonoBehaviour
     void Start()
     {
         sonarPing.spatialize = false;
-    }
+        sonarPing.bypassEffects = true;}
 
     void Update()
     {
@@ -36,8 +36,12 @@ public class Sonar : MonoBehaviour
             sonarPing.Play();
             StartCoroutine(SonarReturn());
         }
-           
+
+
+        sonarReturn.GetComponentInParent<AudioLowPassFilter>().cutoffFrequency = cutoffFreq;
+
     }
+
 
     IEnumerator SonarReturn()
     {

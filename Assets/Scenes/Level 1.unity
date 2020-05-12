@@ -2133,11 +2133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Objective
       objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854467, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Objective
-      objectReference: {fileID: 0}
     - target: {fileID: 7940654775689854479, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2198,16 +2193,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 163948194}
-    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 553690110383781894, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: checkPoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 553690110383781894, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: checkPoints.Array.data[0]
@@ -2218,14 +2203,6 @@ PrefabInstance:
       propertyPath: checkPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1584682096}
-    - target: {fileID: 1098353813, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098353813, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
 --- !u!1 &1098353812 stripped
