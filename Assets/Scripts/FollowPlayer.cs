@@ -196,7 +196,7 @@ public class FollowPlayer : MonoBehaviour
         //get total distance to soundsource
         distance = Vector3.Distance(player.transform.position, offset);
     
-        if (distance > 15.0f)
+        if (distance > 20.0f)
         {
             //if sound is 'too far', get it's direction, normalize, and offset distance by
             // 'max distance'. Also disable the meshrenderer so it's invisible while close

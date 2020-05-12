@@ -24,31 +24,31 @@ public class Sonar : MonoBehaviour
     void Start()
     {
         sonarPing.spatialize = false;
-        sonarPing.bypassEffects = true;}
+        sonarPing.bypassEffects = true;
+        sonarReturn.bypassEffects = true;
+        player = GameObject.FindGameObjectWithTag("Player");
+
+        sonarReturn.GetComponentInParent<AudioLowPassFilter>().cutoffFrequency = cutoffFreq;
+    }
 
     void Update()
     {
         timeDelay = Vector3.Distance(player.transform.position, transform.position) * timeScale / speedOfSound;
 
-        if (Input.GetButtonDown("Fire1") && sonarPing.isPlaying == false)
+        if (Input.GetButtonDown("Fire1") && (sonarPing.isPlaying == false || sonarReturn.isPlaying == false))
         {
-
             sonarPing.Play();
+            Debug.Log("Play 1");
             StartCoroutine(SonarReturn());
         }
-
-
-        sonarReturn.GetComponentInParent<AudioLowPassFilter>().cutoffFrequency = cutoffFreq;
-
     }
-
 
     IEnumerator SonarReturn()
     {
-        Debug.Log("timeDelay" + Time.time);
+        sonarReturn.priority = 10;
+        Debug.Log("Call Time " + Time.time);
         yield return new WaitForSeconds(timeDelay);
-        Debug.Log("Play" + Time.time);
+        Debug.Log("Delayed Time: " + Time.time);
         sonarReturn.Play();
     }
-
 }

@@ -18,15 +18,18 @@ public class SceneManagement : MonoBehaviour
     private Vector3 playerToCheckpoint;
     private Vector3 dir;
 
+
     void Awake()
     {
         //set final pos based on set position in scene
         finalPos = transform.position;
         player = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     void Start()
     {
+
         if (checkPoints[0] == null)
         {
             Debug.Log("Error: No Checkpoints Set");
@@ -107,6 +110,7 @@ public class SceneManagement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         LoadNextLevel();
     }
 
