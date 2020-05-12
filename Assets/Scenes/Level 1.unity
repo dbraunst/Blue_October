@@ -2203,16 +2203,6 @@ PrefabInstance:
       propertyPath: checkPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1584682096}
-    - target: {fileID: 553690110383781894, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: levelComplete
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
 --- !u!1 &1098353812 stripped

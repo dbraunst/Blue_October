@@ -4243,11 +4243,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7940654775689854473, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 723004250}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
+      value: -0.97341585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
+      value: -0.97341585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[4].value
+      value: 0.3292712
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 553690110383781894, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: checkPoints.Array.size
@@ -4273,31 +4298,6 @@ PrefabInstance:
       propertyPath: checkPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1992278985}
-    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
-      value: -0.97341585
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
-      value: -0.97341585
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[4].value
-      value: 0.3292712
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: MaxDistance
-      value: 80
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
 --- !u!1 &1389281718 stripped
