@@ -26,6 +26,7 @@ public class FollowPlayer : MonoBehaviour
 
     public float absWallDistance = 8.0f;
 
+
     //v3 offset multiplier
 
     public Vector3 offset = Vector3.zero;
@@ -45,6 +46,8 @@ public class FollowPlayer : MonoBehaviour
             player = GameObject.FindWithTag("Player");
         }
 
+
+        GetComponent<MeshRenderer>().enabled = false;
     }
 
     // Start is called before the first frame update
@@ -200,13 +203,13 @@ public class FollowPlayer : MonoBehaviour
             dir = offset - player.transform.position;
             offset = player.transform.position + (dir.normalized * _maxDist);
 
-            GetComponent<MeshRenderer>().enabled = false;
+            //GetComponent<MeshRenderer>().enabled = false;   <= temporarily removed meshrenderer bit for testing purposes
         }
-        else if (!GetComponent<MeshRenderer>().enabled)
-        {
-            //re-enable the mesh renderer if within bounds
-            GetComponent<MeshRenderer>().enabled = true;
-        }
+        //else if (!GetComponent<MeshRenderer>().enabled)
+        //{
+        //    //re-enable the mesh renderer if within bounds
+        //    GetComponent<MeshRenderer>().enabled = true;
+        //}
 
         //lerp position for smooth transition
         transform.position = Vector3.Lerp(lastPos, offset, Time.deltaTime * lerpSpeed);
