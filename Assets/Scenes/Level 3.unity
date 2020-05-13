@@ -2972,7 +2972,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095315295}
   m_LocalRotation: {x: -0, y: -0.0072287037, z: -0, w: 0.9999739}
-  m_LocalPosition: {x: 0, y: 0, z: -23}
+  m_LocalPosition: {x: 0, y: 0, z: -69}
   m_LocalScale: {x: 0.99995524, y: 0.9999553, z: 0.99995524}
   m_Children: []
   m_Father: {fileID: 1923305229}
@@ -2980,7 +2980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -0.82800007, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 411, y: -402}
+  m_AnchoredPosition: {x: 644, y: -263}
   m_SizeDelta: {x: 744, y: 348.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095315297
@@ -2996,14 +2996,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.98011065, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 250
+    m_FontSize: 200
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -4243,36 +4243,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7940654775689854473, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 723004250}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
-      value: -0.97341585
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
-      value: -0.97341585
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: rolloffCustomCurve.m_Curve.Array.data[4].value
-      value: 0.3292712
-      objectReference: {fileID: 0}
-    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
-        type: 3}
-      propertyPath: MaxDistance
-      value: 500
-      objectReference: {fileID: 0}
     - target: {fileID: 553690110383781894, guid: 8f75f52422850884fb4abed8f59bf9a8,
         type: 3}
       propertyPath: checkPoints.Array.size
@@ -4298,6 +4273,31 @@ PrefabInstance:
       propertyPath: checkPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1992278985}
+    - target: {fileID: 7940654775689854477, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
+      value: -0.97341585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
+      value: -0.97341585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[4].value
+      value: 0.3292712
+      objectReference: {fileID: 0}
+    - target: {fileID: 7940654775689854472, guid: 8f75f52422850884fb4abed8f59bf9a8,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f75f52422850884fb4abed8f59bf9a8, type: 3}
 --- !u!1 &1389281718 stripped
@@ -5107,7 +5107,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729634547}
   m_LocalRotation: {x: -0, y: -0.0072287037, z: -0, w: 0.9999739}
-  m_LocalPosition: {x: 0, y: 0, z: -15}
+  m_LocalPosition: {x: 0, y: 0, z: -37}
   m_LocalScale: {x: 0.99995524, y: 0.9999553, z: 0.99995524}
   m_Children: []
   m_Father: {fileID: 1923305229}
@@ -5115,7 +5115,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -0.82800007, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 952.9998, y: -402}
+  m_AnchoredPosition: {x: 1065, y: -262.99997}
   m_SizeDelta: {x: 297.9, y: 348.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1729634549
@@ -5131,14 +5131,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.98011065, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 250
+    m_FontSize: 200
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -5721,6 +5721,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 470630759}
+    - target: {fileID: 6448042208420058582, guid: a4a471ae59f591545beb0141270e2d6d,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4a471ae59f591545beb0141270e2d6d, type: 3}
 --- !u!224 &1923305229 stripped

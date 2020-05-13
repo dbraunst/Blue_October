@@ -66,7 +66,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1425.4, y: -1193}
+  m_AnchoredPosition: {x: 1212, y: -1193}
   m_SizeDelta: {x: 2274.4, y: 501.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6448042208119081919
@@ -111,16 +111,18 @@ MonoBehaviour:
   m_Text: 'CONTROLS:
 
 
-    Space - Accelerate
+    Space (hold) - Accelerate (TIP: don''t hold down constantly; release and use the
+    turn buttons to assess your location)
 
 
     Left-Mouse Click - Sonar Pulse
 
 
-    A - Turn Left
+    A - Turn Left (hold for longer turns)
 
 
-    D - Turn Right'
+    D - Turn Right (TIP: if you feel lost, use the turn keys to figure out where the
+    obstacles are around you'
 --- !u!1 &6448042208368958332
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1330.5, y: -68.79999}
+  m_AnchoredPosition: {x: 1117.1001, y: -68.79999}
   m_SizeDelta: {x: 2661, y: 137.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6448042208368958323
@@ -276,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -410,7 +412,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1425.4, y: -512}
+  m_AnchoredPosition: {x: 1212, y: -512}
   m_SizeDelta: {x: 2274.4, y: 667.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6448042208924404879
@@ -462,8 +464,10 @@ MonoBehaviour:
     walls and other objects in the game, you must avoid these. The volume, LPF, and
     directionality will guide you in how close you are to the objects and in which
     direction you need to turn to avoid them.\n\nThere are three levels in total.
-    \n\nPlease fill out the answers to the questionnaire once you have completed the
-    experience. Thanks for playing!\n"
+    You will not be able to head in a straight line to most objectives, so listen
+    for your engine reflections (especially from the front) in order to take a path
+    around the obstacles. \n\nPlease fill out the answers to the questionnaire once
+    you have completed the experience. Thanks for playing!\n"
 --- !u!1 &6448042209291897528
 GameObject:
   m_ObjectHideFlags: 0
